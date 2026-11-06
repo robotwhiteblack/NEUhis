@@ -1,0 +1,64 @@
+# ==========================================
+# 1. IntelliJ IDEA (JetBrains 家族)
+# ==========================================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+/cmake-build-*/
+
+# ==========================================
+# 2. Java / Spring Boot (Maven & Gradle)
+# ==========================================
+target/
+build/
+.gradle/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+# 本地测试用的 Spring Boot 配置文件，防止覆盖远端配置
+application-local.yml
+application-local.properties
+
+# ==========================================
+# 3. Python / AI 算法开发
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+# 虚拟环境
+venv/
+.venv/
+env/
+# 深度学习模型权重与数据集
+*.pth
+*.pt
+*.onnx
+*.h5
+datasets/
+models/
+runs/
+.ipynb_checkpoints/
+
+# ==========================================
+# 4. 环境变量与敏感凭据
+# ==========================================
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# ==========================================
+# 5. 操作系统与日志缓存
+# ==========================================
+.DS_Store
+Thumbs.db
+*.log
+tmp/
+temp/
+logs/

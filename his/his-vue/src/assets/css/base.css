@@ -1,0 +1,147 @@
+/* 医疗系统全局美化样式 */
+:root {
+  --main-blue: #2196f3;
+  --main-green: #4caf50;
+  --main-bg: linear-gradient(135deg, #e3f0ff 0%, #f8fbff 100%);
+  --main-radius: 18px;
+  --main-shadow: 0 8px 32px rgba(33,150,243,0.10);
+  --main-font: 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+}
+
+/* 全局样式表 */
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 1366px;
+  background: var(--main-bg);
+  font-family: var(--main-font);
+  color: #222;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+
+.el-breadcrumb {
+  margin-bottom: 18px;
+  font-size: 13px;
+  color: var(--main-blue);
+}
+
+.el-card {
+  box-shadow: var(--main-shadow) !important;
+  border-radius: var(--main-radius) !important;
+  border: none;
+  background: #fff;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.el-card:hover {
+  box-shadow: 0 16px 48px 0 rgba(33, 203, 243, 0.18);
+  transform: translateY(-4px) scale(1.02);
+}
+
+.el-table {
+  margin-top: 18px;
+  font-size: 15px;
+  border-radius: var(--main-radius);
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 8px #2196f311;
+}
+
+.el-pagination {
+  margin-top: 18px;
+}
+
+.el-steps {
+  margin: 18px 0;
+}
+
+.el-step__title {
+  font-size: 14px;
+}
+
+.el-button--primary {
+  background: var(--main-blue);
+  border-color: var(--main-blue);
+  border-radius: var(--main-radius);
+}
+
+.el-button--info {
+  background: var(--main-green);
+  border-color: var(--main-green);
+  border-radius: var(--main-radius);
+}
+
+.el-input__inner {
+  border-radius: var(--main-radius);
+  font-size: 16px;
+  padding: 10px 16px;
+  box-shadow: 0 2px 8px #2196f311;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.el-input__inner:focus {
+  box-shadow: 0 4px 16px #21d4fd33;
+  border-color: #21d4fd;
+}
+
+.ql-editor {
+  min-height: 300px;
+  border-radius: var(--main-radius);
+}
+
+/* 登录页专用美化 */
+.login_container {
+  background: var(--main-bg);
+  height: 100%;
+}
+
+.login_box {
+  width: 420px;
+  height: 340px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: var(--main-shadow);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 40px;
+}
+
+.avatar_box {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(33,150,243,0.10);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar_box img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #e3f0ff;
+}
+
+.login_form {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 32px 24px 32px;
+  box-sizing: border-box;
+}
+
+.btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
